@@ -3,9 +3,9 @@
         
         <!-- CONTENT START -->
         <div class="page-content">
-            <client-only>
+            <!-- <client-only>
                 <vue-particles color="#dedede"></vue-particles>
-            </client-only>
+            </client-only> -->
                
 
          
