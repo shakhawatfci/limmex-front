@@ -82,7 +82,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    vendor: ['vue-particles'],
+    // vendor: ['vue-particles'],
     extend (config, ctx) {
     }
   }
