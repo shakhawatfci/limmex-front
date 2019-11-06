@@ -309,7 +309,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="mt-footer-bot-center">
-                            <span class="copyrights-text">© 2018 Your Company. Designed By 7xtheme.</span>
+                            <span class="copyrights-text">© {{ date }} Your Company. Designed By 7xtheme.</span>
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,14 @@
 <script>
 export default {
  
- 
+ data(){
+
+     return {
+
+         date : new Date().getFullYear(),
+
+     }
+ }
  
     
 }
