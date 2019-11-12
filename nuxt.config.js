@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 export default {
   mode: 'universal',
   /*
@@ -6,10 +6,11 @@ export default {
   */
  
   head: {
-    title: 'Limmex Construction | Largest heavy equipment supplier in bangladesh',
+    title: 'Limmex Construction | Largest heavy equipment supplier in bangladesh | Lowest Price  Heavy Equipment Rental In Bangladesh',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'keyword', name: 'keyword', content : 'Limmex,Limmex Bangladesh,limmex construction,Excavetor,Dozer,Crane,Dump Truck,Mixer Truck,Generator,Hand Compector,Heavy Equipment in Bangladesh' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
@@ -70,11 +71,22 @@ export default {
   */
   buildModules: [
   ],
+
+  // environment 
+
+  env: {
+    baseUrl: process.env.API_BASE_URL || 'http://localhost/limmex-back/api/'
+  },
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
   ],
+
+  axios: {
+    // proxyHeaders: false
+  },
   /*
   ** Build configuration
   */

@@ -5,12 +5,14 @@
   "author": "shakhawat hossain",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "API_URL=http://localhost/limmex-back/api nuxt",
+    "build": "API_URL=http://localhost/limmex-back/api nuxt build",
+    "start": "API_URL=http://localhost/limmex-back/api nuxt start",
+    "generate": "API_URL=http://localhost/limmex-back/api nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.8.0",
+    "dotenv": "^8.2.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

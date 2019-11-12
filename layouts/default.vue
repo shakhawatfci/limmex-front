@@ -4,18 +4,19 @@
 
     
      <header class="site-header header-style-1">
+
             <div class="top-bar bg-gray">
                 <div class="container">
                     <div class="row">
                         <div class="mt-topbar-left clearfix">
                             <ul class="list-unstyled e-p-bx pull-right">
-                                <li><i class="fa fa-envelope"></i> 7xthemehelp@gmail.com</li>
-                                <li><i class="fa fa-phone"></i>(075) 123-7654</li>
-                                <li><i class="fa fa-clock-o"></i>Sun-Sat 9.45 am</li>
+                                <li><i class="fa fa-envelope"></i> business@limmexbd.com</li>
+                                <li><i class="fa fa-phone"></i>+88 01301270202</li>
+                                
                             </ul>
                         </div>
                         <div class="mt-topbar-right clearfix">
-                            <div class="appint-btn"><a href="#" class="site-button">Make an Appointment</a></div>                            
+                            <div class="appint-btn"><a href="" data-toggle="modal" data-target="#with-form" class="site-button">FIND QUOTATION BY 1 HOUR</a></div>                            
                         </div>
                     </div>
                 </div>
@@ -61,7 +62,7 @@
                                                 <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-phone"></i></div>
                                                 <div class="icon-content">
                                                     <h5 class="m-t0 font-weight-500">Phone number</h5>
-                                                    <p>(075) 123-7654</p>
+                                                    <p>+88 01301270202</p>
                                                 </div>
                                             </div>
                                             
@@ -69,7 +70,7 @@
                                                 <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-envelope"></i></div>
                                                 <div class="icon-content">
                                                     <h5 class="m-t0 font-weight-500">Email address</h5>
-                                                    <p>7xthemehelp@gmail.com</p>
+                                                    <p>business@limmexbd.com</p>
                                                 </div>
                                             </div>
                                             
@@ -77,7 +78,7 @@
                                                 <div class="icon-xs m-b20 scale-in-center"><i class="fa fa-map-marker"></i></div>
                                                 <div class="icon-content">
                                                     <h5 class="m-t0 font-weight-500">Address info</h5>
-                                                    <p>201 Liverpool Street, Suite 721, London</p>
+                                                    <p>Suite 219, Muktobangla Complex, Mirpur-1, Dhaka-1216</p>
                                                 </div>
                                             </div>
                                         </div>                                          
@@ -122,44 +123,17 @@
                                     </li> 
 
                                     <li>
-                                        <nuxt-link to="/contact-us">Contact us</nuxt-link>
+                                        <nuxt-link to="/contact-us">Projects</nuxt-link>
                                     </li> 
-                                                                                                                                                                                   
-                                    <li>
-                                        <a href="javascript:;">Post detail</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="post-image.html">Post Image</a></li>
-                                            <li><a href="post-gallery.html">Post Gallery</a></li>
-                                            <li><a href="post-video.html">Post Video</a></li>
-                                            <li><a href="post-right-sidebar.html">Post Right Sidebar</a></li>                                        
-                                        </ul>                                    
-                                    </li>                                         
 
                                     <li>
-                                        <a href="javascript:;">Projects</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="project-grid.html">Project Grid</a></li>
-                                            <li><a href="project-masonry.html">Project Masonry</a></li>
-                                            <li><a href="project-carousel.html">Project Carousel</a></li>
-                                            <li><a href="project-classic.html">Project Classic-1</a></li>
-                                            <li><a href="project-classic2.html">Project Classic-2</a></li>
-                                            <li><a href="project-detail.html">Project Detail</a></li>                                        
-                                        </ul>
-                                    </li>
-                                    <li class="submenu-direction">
-                                        <a href="javascript:;">Shortcodes</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="accordian.html">Accordian</a></li>
-                                            <li><a href="button.html">Button</a></li>
-                                            <li><a href="icon_box.html">Icon box style</a></li>
-                                            <li><a href="list_group.html">List group</a></li>
-                                            <li><a href="modal_popup.html">Modal popup</a></li>
-                                            <li><a href="tabs.html">Tabs</a></li>
-                                            <li><a href="table.html">Table</a></li>
-                                            <li><a href="video.html">Video  </a></li>
-                                            <li><a href="icon-font.html">Icon Font </a></li> 
-                                        </ul>                                    
-                                    </li>                                
+                                        <nuxt-link to="/contact-us">Concern</nuxt-link>
+                                    </li> 
+
+                                    <li>
+                                        <nuxt-link to="/contact-us">Contact us</nuxt-link>
+                                    </li> 
+                                                                 
                                 </ul>
                             </div>
                             
@@ -170,16 +144,20 @@
         <!-- HEADER END -->
         <!-- dynamic content  -->
     <nuxt />
+    
+         <!-- popup modal  -->
+          <qoutation></qoutation>
+         <!-- popup modal  -->
 
      <!-- FOOTER START -->
-        <footer class="site-footer footer-large  footer-dark	footer-wide">
+        <footer class="site-footer footer-large  footer-dark footer-wide">
             <div class="container call-to-action-wrap bg-no-repeat bg-center" style="background-image:url(images/background/bg-site.png);">
                 <div class="p-a30 bg-primary ">
                     <div class="row">
                         <div class="col-md-8 col-sm-8">
                             <div class="call-to-action-left text-black">
-                                <h4 class="text-uppercase m-b10 m-t0">Subscribe to our newsletter!</h4>
-                                <span>Never Miss Anything From Construx By Signing Up To Our Newsletter.</span>
+                                <h4 class="text-uppercase m-b10 m-t0">Find Our Updates!</h4>
+                                <span>Never Miss Anything From Limmex.</span>
                             </div>
                         </div>
                         
@@ -231,10 +209,10 @@
                             <div class="widget widget_address_outer">
                                 <h4 class="widget-title">Contact Us</h4>
                                 <ul class="widget_address">
-                                    <li>34/7 Liverpool Street, Suite 636, London, United Kingdom</li>
-                                    <li>7xthemedemo@gmail.com</li>
-                                    <li>(+298) 012-3456-789</li>
-                                    <li>(+298) 146-6543-480</li>
+                                    <li>Suite 219, Muktobangla Complex, Mirpur-1, Dhaka-1216</li>
+                                    <li>business@gmail.com</li>
+                                    <li>+88 01301270202</li>
+                                    <li>+88 01301270203</li>
                                 </ul>
                            
                             </div>                                              	
@@ -245,10 +223,11 @@
                             <div class="widget widget_services inline-links">
                                 <h4 class="widget-title">Useful links</h4>
                                 <ul>
-                                    <li><a href="about-1.html">About</a></li>
-                                    <li><a href="project-grid.html">Projects</a></li>
-                                    <li><a href="blog-grid.html">Blog</a></li>
-                                    <li><a href="contact-1.html">Contact Us</a></li>
+                                    <li><nuxt-link to="/about-us">About</nuxt-link></li>
+                                    <li><nuxt-link to="/contact-us">Contact us</nuxt-link></li>
+                                    <li><nuxt-link to="/equipment">Equipment</nuxt-link></li>
+                                    <li><nuxt-link to="/project">Projects</nuxt-link></li>
+                                    <li><nuxt-link to="/blog">Blog</nuxt-link></li>
                                 </ul>
                             </div>                           
                         </div>
@@ -309,7 +288,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="mt-footer-bot-center">
-                            <span class="copyrights-text">© {{ date }} Your Company. Designed By 7xtheme.</span>
+                            <span class="copyrights-text">© {{ date }} Limmex.</span>
                         </div>
                     </div>
                 </div>
@@ -328,7 +307,14 @@
   </div>
 </template>
 <script>
+import Quotation from '~/components/common/Quotation.vue';
 export default {
+
+    components : {
+ 
+       'qoutation' : Quotation
+
+    },
  
  data(){
 

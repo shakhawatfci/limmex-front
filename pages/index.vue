@@ -1447,6 +1447,7 @@ import CallUs from '~/components/home/callUs.vue';
 import aboutSlider from '~/components/home/aboutSlider.vue';
 import JqueryMixin from '~/mixin/jquery-mixin.js';
 import SliderRev from '~/mixin/slider-rev.js';
+import axios from 'axios';
 // import VueParticle  from 'vue-particles';
 export default {
  
@@ -1460,7 +1461,22 @@ export default {
 
  mixins:[JqueryMixin,SliderRev],
 
+async asyncData({ $axios }) {
+  const equipment  = await $axios.$get(process.env.baseUrl+'/home-equipment')
+  return { equipment }
+},
+
  mounted(){
+
+    //  console.log(this.equipment.data);
+
+    //  console.log()
+
+    this.equipment.forEach(element => {
+         
+         console.log(element.feature_image);
+
+    });
 
  }
 
