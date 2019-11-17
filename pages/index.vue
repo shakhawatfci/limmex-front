@@ -666,113 +666,25 @@
 						</div>
 					</div>                   
                     <!-- TITLE END -->                
-                    <!-- PAGINATION START -->
-                    <!-- <div class="filter-wrap p-b30 text-center">
-                        <ul class="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
-                            <li class="active"><a data-filter="*" href="#" data-hover="All">All</a></li>
-                            <li><a data-filter=".cat-1" href="#" data-hover="Construction">Construction</a></li>
-                            <li><a data-filter=".cat-2" href="#" data-hover="Renovation">Renovation</a></li>
-                            <li><a data-filter=".cat-3" href="#" data-hover="Outdoor">Outdoor</a></li>
-                            <li><a data-filter=".cat-4" href="#" data-hover="Interiors">Interiors </a></li>
-                            <li><a data-filter=".cat-5" href="#" data-hover="Consulting">Consulting</a></li>
-                        </ul>
-                    </div> -->
-                    <!-- PAGINATION END -->
+
                     
                     <!-- GALLERY CONTENT START -->
                      <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
                         <!-- COLUMNS 1 -->
-                        <div class="masonry-item cat-1  col-md-4 col-sm-6 m-b30">
+                        <div v-for="value in equipments" :key="value.id" class="masonry-item cat-1  col-md-4 col-sm-6 m-b30">
                             <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic1.jpg" alt=""/>
+                                <img :src="value.feature_image" :alt="value.capacity.capacity+' '+value.equipment_type.name"/>
                                 <div class="figcaption">
-                                    <h4 class="mt-tilte">Crawler Excavetor</h4>
-                                    <p>50ton craler excavetor</p>
+                                    <h4 class="mt-tilte">{{ value.equipment_type.name }}</h4>
+                                    <p>Capacity : {{ value.capacity.capacity }}</p>
                                     <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic4.jpg">
+                                    <a class="mfp-link" :href="value.feature_image">
                                     	<i class="fa fa-arrows-alt"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <!-- COLUMNS 2 -->
-                        <div class="masonry-item cat-2 col-md-4 col-sm-6 m-b30">
 
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic2.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Central City Building</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic9.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- COLUMNS 3 -->
-                        <div class="masonry-item cat-3 col-md-4 col-sm-6 m-b30">
-
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic3.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Nathan Brooke House</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic6.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- COLUMNS 4 -->
-                        <div class="masonry-item cat-4 col-md-4 col-sm-6 m-b30">
-
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic4.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Metropolitan Museum.</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic5.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-    
-                        </div>
-                        <!-- COLUMNS 5 -->
-                        <div class="masonry-item cat-5 col-md-4 col-sm-6 m-b30">
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic5.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Art Family Residence</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic7.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
- 
-                        </div>
-                        <!-- COLUMNS 6 -->
-                        <div class="masonry-item cat-4 col-md-4 col-sm-6 m-b30">
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic6.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Office Partition Walls</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic8.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
                           
                      </div>
                     <!-- GALLERY CONTENT END -->
@@ -1101,7 +1013,7 @@
 						</div>
 					</div>                   
                     <!-- TITLE END -->                
-                    <!-- PAGINATION START -->
+                    <!-- 
                     <div class="filter-wrap p-b30 text-center">
                         <ul class="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
                             <li class="active"><a data-filter="*" href="#" data-hover="All">All</a></li>
@@ -1112,103 +1024,24 @@
                             <li><a data-filter=".cat-5" href="#" data-hover="Consulting">Consulting</a></li>
                         </ul>
                     </div>
-                    <!-- PAGINATION END -->
+                     -->
                     
                     <!-- GALLERY CONTENT START -->
                      <div class="portfolio-wrap mfp-gallery work-grid row clearfix">
                         <!-- COLUMNS 1 -->
-                        <div class="masonry-item cat-1  col-md-4 col-sm-6 m-b30">
+                        <div v-for="project in projects" :key="project.id" class="masonry-item cat-1  col-md-4 col-sm-6 m-b30">
                             <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic1.jpg" alt=""/>
+                                <img :src="project.image" :alt="project.project_name"/>
                                 <div class="figcaption">
-                                    <h4 class="mt-tilte">Life style building</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
+                                    <h4 class="mt-tilte">{{ project.project_name }}</h4>
+                                    <p>{{ project.short_description  }}</p>
                                     <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic4.jpg">
+                                    <a class="mfp-link" :href="project.image">
                                     	<i class="fa fa-arrows-alt"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <!-- COLUMNS 2 -->
-                        <div class="masonry-item cat-2 col-md-4 col-sm-6 m-b30">
-
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic2.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Central City Building</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic9.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- COLUMNS 3 -->
-                        <div class="masonry-item cat-3 col-md-4 col-sm-6 m-b30">
-
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic3.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Nathan Brooke House</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic6.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- COLUMNS 4 -->
-                        <div class="masonry-item cat-4 col-md-4 col-sm-6 m-b30">
-
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic4.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Metropolitan Museum.</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic5.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-    
-                        </div>
-                        <!-- COLUMNS 5 -->
-                        <div class="masonry-item cat-5 col-md-4 col-sm-6 m-b30">
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic5.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Art Family Residence</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic7.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
- 
-                        </div>
-                        <!-- COLUMNS 6 -->
-                        <div class="masonry-item cat-4 col-md-4 col-sm-6 m-b30">
-                            <div class="image-effect-two hover-shadow">
-                                <img src="images/projects/portrait/pic6.jpg" alt=""/>
-                                <div class="figcaption">
-                                    <h4 class="mt-tilte">Office Partition Walls</h4>
-                                    <p>We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.</p>
-                                    <a href="#" class="read-more site-button btn-effect">Read More</a>
-                                    <a class="mfp-link" href="images/projects/portrait/pic8.jpg">
-                                    	<i class="fa fa-arrows-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                          
                      </div>
                     <!-- GALLERY CONTENT END -->
                     
@@ -1462,21 +1295,13 @@ export default {
  mixins:[JqueryMixin,SliderRev],
 
 async asyncData({ $axios }) {
-  const equipment  = await $axios.$get(process.env.baseUrl+'/home-equipment')
-  return { equipment }
+  const equipment  = await $axios.$get(process.env.baseUrl+'/home-equipment');
+  const project  = await $axios.$get(process.env.baseUrl+'/home-project');
+  return { equipments : equipment,projects : project }
 },
 
  mounted(){
 
-    //  console.log(this.equipment.data);
-
-    //  console.log()
-
-    this.equipment.forEach(element => {
-         
-         console.log(element.feature_image);
-
-    });
 
  }
 
